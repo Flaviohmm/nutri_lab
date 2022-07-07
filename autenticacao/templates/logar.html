@@ -33,7 +33,7 @@
                     <p class="sub-titulo">Entre com sua conta</p>
                     <hr>
 
-                    <form action="{% url 'logar' %}" method="POST">
+                    <form action="{% url 'logar' %}" method="post">
                         {% csrf_token %}
                         <span class="bold">Nome do usuário</span>
                         <input type="text" class="form-control input-form" name="usuario" placeholder="Digite seu nome...">
